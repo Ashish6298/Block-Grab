@@ -34,6 +34,7 @@ const copyDirSync = (src, dest) => {
 copyFileSync('manifest.json', 'dist/manifest.json');
 copyFileSync('src/adblock/rules.json', 'dist/src/adblock/rules.json');
 copyFileSync('src/adblock/cosmeticFilters.css', 'dist/src/adblock/cosmeticFilters.css');
+copyFileSync('src/assets/logo.png', 'dist/src/assets/logo.png');
 copyDirSync('src/assets/icons', 'dist/src/assets/icons');
 
 console.log('Post-build assets copy finished!');

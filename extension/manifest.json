@@ -1,8 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "AdShield & Video Downloader",
+  "name": "Block&Grab",
   "version": "1.0.0",
   "description": "High-performance Ad Blocker and HD Video/MP3 Downloader.",
+  "icons": {
+    "16": "src/assets/icons/icon16.png",
+    "48": "src/assets/icons/icon48.png",
+    "128": "src/assets/icons/icon128.png"
+  },
   "permissions": [
     "storage",
     "tabs",
