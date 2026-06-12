@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Builds
+dist/
+build/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Temporary Files & Media Downloads
+backend/downloads/*
+!backend/downloads/.gitkeep
+backend/temp/*
+!backend/temp/.gitkeep
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

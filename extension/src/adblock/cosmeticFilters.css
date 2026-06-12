@@ -1,0 +1,81 @@
+/* Common advertising containers */
+.ad,
+.ads,
+.advert,
+.advertisement,
+.ad-banner,
+.ad-container,
+.ad-content,
+.ad-slot,
+.ad-wrapper,
+.ad-unit,
+.adsbox,
+.adsbygoogle,
+.banner-ad,
+.display-ad,
+.google-ad,
+.native-ad,
+.sponsored-ad,
+.sponsored-content,
+.sponsored-links,
+[data-ad],
+[data-ad-slot],
+[data-ad-unit],
+[data-adunit],
+[data-testid*="ad-container"],
+[id^="google_ads_"],
+[id^="div-gpt-ad"],
+[id*="-ad-container"],
+[class^="ad-container"],
+[class*=" ad-container"],
+#ad-banner,
+#ad-container,
+#ad-slot,
+#ad-placement,
+#header-ads,
+#footer-ads,
+#sidebar-ads,
+iframe[src*="doubleclick.net"],
+iframe[src*="googlesyndication.com"],
+iframe[src*="googleads"],
+iframe[src*="adservice"],
+a[href*="doubleclick.net"],
+a[href*="googleadservices.com"],
+
+/* YouTube advertising surfaces */
+#masthead-ad,
+#player-ads,
+#panels ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"],
+.ytp-ad-module,
+.ytp-ad-overlay-container,
+.ytp-ad-message-container,
+.ytp-ad-player-overlay,
+.ytp-ad-survey,
+.ytp-ad-text-overlay,
+.ytp-ad-image-overlay,
+.ytp-ad-overlay-image,
+ytd-ad-slot-renderer,
+ytd-action-companion-ad-renderer,
+ytd-banner-promo-renderer,
+ytd-companion-slot-renderer,
+ytd-display-ad-renderer,
+ytd-in-feed-ad-layout-renderer,
+ytd-mealbar-promo-renderer,
+ytd-merch-shelf-renderer,
+ytd-player-legacy-desktop-watch-ads-renderer,
+ytd-promoted-sparkles-text-search-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-promoted-video-renderer,
+ytd-search-pyv-renderer,
+ytm-promoted-sparkles-web-renderer {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  max-height: 0 !important;
+  min-height: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important;
+}

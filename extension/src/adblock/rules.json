@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "requestDomains": [
+        "2mdn.net",
+        "adcolony.com",
+        "adform.net",
+        "adnxs.com",
+        "adroll.com",
+        "adsrvr.org",
+        "adservice.google.com",
+        "amazon-adsystem.com",
+        "appier.net",
+        "bidswitch.net",
+        "casalemedia.com",
+        "criteo.com",
+        "criteo.net",
+        "doubleclick.net",
+        "exoclick.com",
+        "googleadservices.com",
+        "googlesyndication.com",
+        "gumgum.com",
+        "lijit.com",
+        "media.net",
+        "moatads.com",
+        "openx.net",
+        "outbrain.com",
+        "popads.net",
+        "pubmatic.com",
+        "revcontent.com",
+        "rubiconproject.com",
+        "scorecardresearch.com",
+        "sharethrough.com",
+        "smartadserver.com",
+        "spotxchange.com",
+        "taboola.com",
+        "teads.tv",
+        "zedo.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "image",
+        "stylesheet",
+        "font",
+        "media",
+        "sub_frame",
+        "xmlhttprequest",
+        "ping",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "requestDomains": [
+        "ads-twitter.com",
+        "analytics.twitter.com",
+        "branch.io",
+        "chartbeat.com",
+        "connect.facebook.net",
+        "google-analytics.com",
+        "hotjar.com",
+        "mixpanel.com",
+        "quantserve.com",
+        "segment.io",
+        "segment.com"
+      ],
+      "resourceTypes": ["script", "image", "xmlhttprequest", "ping", "other"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 2,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||securepubads.g.doubleclick.net^",
+      "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 2,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||pagead2.googlesyndication.com^",
+      "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "||googleads.g.doubleclick.net^",
+      "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "/gampad/ads",
+      "resourceTypes": ["xmlhttprequest", "media", "sub_frame"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "/pagead/",
+      "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "/adserver/",
+      "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "/adservice/",
+      "resourceTypes": ["script", "image", "sub_frame", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "/sponsored-banners/",
+      "resourceTypes": ["image", "sub_frame", "xmlhttprequest"]
+    }
+  }
+]
