@@ -1,4 +1,4 @@
-# AdShield Plus & HD Video/MP3 Downloader
+# Block-Grab
 
 A professional browser extension built using Manifest V3 that provides a double utility module: an **Ad Blocker** (utilizing high-performance `declarativeNetRequest` rules and cosmetic DOM filtering) and a **Video Downloader** (which detects active video elements and coordinates with a Node.js backend to extract and convert MP3 audios or download videos up to 4K quality).
 
