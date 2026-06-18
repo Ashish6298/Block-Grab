@@ -1,0 +1,157 @@
+<svg viewBox="0 0 1300 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="nodeFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2333"/>
+      <stop offset="100%" stop-color="#161b27"/>
+    </linearGradient>
+    <linearGradient id="adFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1a33"/>
+      <stop offset="100%" stop-color="#1c1322"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#00C9FF"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#8E2DE2"/>
+    </marker>
+  </defs>
+
+  <rect width="1300" height="480" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="650" y="40" text-anchor="middle" fill="#e6edf3" font-family="Verdana, sans-serif" font-size="22" font-weight="bold">⚙️ Block-Grab Architecture Flow</text>
+
+  <!-- ===================== CONNECTOR PATHS ===================== -->
+  <!-- declarativeNetRequest -> Web Page -->
+  <path id="p1" d="M 230 130 L 360 200" stroke="#8E2DE2" stroke-width="2" fill="none" marker-end="url(#arrowPurple)" opacity="0.85"/>
+  <!-- Cosmetic CSS -> Web Page -->
+  <path id="p2" d="M 230 280 L 360 220" stroke="#8E2DE2" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#arrowPurple)" opacity="0.85"/>
+  <!-- Web Page -> Content Script -->
+  <path id="p3" d="M 480 200 L 600 200" stroke="#00C9FF" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Content Script -> Background Worker -->
+  <path id="p4" d="M 720 200 L 850 200" stroke="#00C9FF" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Background Worker -> Backend -->
+  <path id="p5" d="M 970 200 L 1080 200" stroke="#00C9FF" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Backend -> services (3 branches) -->
+  <path id="p6" d="M 1160 175 L 1160 110" stroke="#00D26A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path id="p7" d="M 1160 230 L 1160 290" stroke="#00D26A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path id="p8" d="M 1130 230 L 980 360" stroke="#00D26A" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <!-- services -> downloads -->
+  <path id="p9" d="M 1100 90 C 950 60, 750 380, 870 400" stroke="#FFC107" stroke-width="2" fill="none" stroke-dasharray="4,4" opacity="0.7"/>
+  <!-- Backend -> Content Script (progress + file) -->
+  <path id="p10" d="M 1080 240 C 950 320, 800 320, 720 230" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrow)" stroke-dasharray="2,5"/>
+  <!-- Content Script -> Web Page (save file) -->
+  <path id="p11" d="M 600 230 C 540 290, 470 280, 478 232" stroke="#FF6B6B" stroke-width="2" fill="none" marker-end="url(#arrow)" stroke-dasharray="2,5"/>
+
+  <!-- ===================== FLOWING DATA DOTS ===================== -->
+  <circle r="4" fill="#8E2DE2" filter="url(#glow)">
+    <animateMotion dur="2.2s" repeatCount="indefinite" path="M 230 130 L 360 200"/>
+  </circle>
+  <circle r="4" fill="#00C9FF" filter="url(#glow)">
+    <animateMotion dur="1.6s" repeatCount="indefinite" path="M 480 200 L 600 200"/>
+  </circle>
+  <circle r="4" fill="#00C9FF" filter="url(#glow)">
+    <animateMotion dur="1.6s" begin="0.4s" repeatCount="indefinite" path="M 720 200 L 850 200"/>
+  </circle>
+  <circle r="4" fill="#00C9FF" filter="url(#glow)">
+    <animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite" path="M 970 200 L 1080 200"/>
+  </circle>
+  <circle r="3.5" fill="#00D26A" filter="url(#glow)">
+    <animateMotion dur="1.4s" repeatCount="indefinite" path="M 1160 175 L 1160 110"/>
+  </circle>
+  <circle r="3.5" fill="#00D26A" filter="url(#glow)">
+    <animateMotion dur="1.4s" begin="0.3s" repeatCount="indefinite" path="M 1160 230 L 1160 290"/>
+  </circle>
+  <circle r="3.5" fill="#00D26A" filter="url(#glow)">
+    <animateMotion dur="1.4s" begin="0.6s" repeatCount="indefinite" path="M 1130 230 L 980 360"/>
+  </circle>
+  <circle r="3.5" fill="#FF6B6B" filter="url(#glow)">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M 1080 240 C 950 320, 800 320, 720 230"/>
+  </circle>
+  <circle r="3.5" fill="#FF6B6B" filter="url(#glow)">
+    <animateMotion dur="2.4s" begin="2.4s" repeatCount="indefinite" path="M 600 230 C 540 290, 470 280, 478 232"/>
+  </circle>
+
+  <!-- ===================== NODES ===================== -->
+
+  <!-- declarativeNetRequest rules -->
+  <rect x="30" y="95" width="200" height="70" rx="10" fill="url(#adFill)" stroke="#8E2DE2" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="130" y="125" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">🛡️ declarativeNetRequest</text>
+  <text x="130" y="143" text-anchor="middle" fill="#a9b4c4" font-family="Verdana" font-size="11">rules</text>
+
+  <!-- Cosmetic CSS filters -->
+  <rect x="30" y="245" width="200" height="70" rx="10" fill="url(#adFill)" stroke="#8E2DE2" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="130" y="275" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">🎨 Cosmetic CSS</text>
+  <text x="130" y="293" text-anchor="middle" fill="#a9b4c4" font-family="Verdana" font-size="11">filters</text>
+
+  <!-- Web Page -->
+  <rect x="360" y="165" width="120" height="70" rx="10" fill="url(#nodeFill)" stroke="#00C9FF" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="stroke-width" values="2;3;2" dur="1.8s" repeatCount="indefinite"/>
+  </rect>
+  <text x="420" y="195" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">🌐 Web Page</text>
+  <text x="420" y="213" text-anchor="middle" fill="#a9b4c4" font-family="Verdana" font-size="11">video elements</text>
+
+  <!-- Content Script -->
+  <rect x="600" y="165" width="120" height="70" rx="10" fill="url(#nodeFill)" stroke="#00C9FF" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;3;2" dur="1.8s" begin="0.4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="660" y="190" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">📜 Content</text>
+  <text x="660" y="206" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">Script</text>
+  <text x="660" y="223" text-anchor="middle" fill="#a9b4c4" font-family="Verdana" font-size="10">+ floating button</text>
+
+  <!-- Background Worker -->
+  <rect x="850" y="165" width="120" height="70" rx="10" fill="url(#nodeFill)" stroke="#00C9FF" stroke-width="2">
+    <animate attributeName="stroke-width" values="2;3;2" dur="1.8s" begin="0.8s" repeatCount="indefinite"/>
+  </rect>
+  <text x="910" y="190" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">⚙️ Background</text>
+  <text x="910" y="206" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">Service Worker</text>
+
+  <!-- Express Backend -->
+  <rect x="1080" y="165" width="160" height="70" rx="10" fill="url(#nodeFill)" stroke="#00D26A" stroke-width="2.5" filter="url(#glow)">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="1160" y="190" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="12" font-weight="bold">🖥️ Express Backend</text>
+  <text x="1160" y="208" text-anchor="middle" fill="#a9b4c4" font-family="Verdana" font-size="10">localhost:5000</text>
+
+  <!-- videoExtractor -->
+  <rect x="1080" y="55" width="160" height="50" rx="8" fill="url(#nodeFill)" stroke="#00D26A" stroke-width="1.5"/>
+  <text x="1160" y="85" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="11" font-weight="bold">🎞️ videoExtractor</text>
+
+  <!-- audioConverter -->
+  <rect x="1080" y="295" width="160" height="50" rx="8" fill="url(#nodeFill)" stroke="#00D26A" stroke-width="1.5"/>
+  <text x="1160" y="325" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="11" font-weight="bold">🎵 audioConverter</text>
+
+  <!-- fileManager -->
+  <rect x="900" y="360" width="160" height="50" rx="8" fill="url(#nodeFill)" stroke="#00D26A" stroke-width="1.5"/>
+  <text x="980" y="390" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="11" font-weight="bold">📁 fileManager</text>
+
+  <!-- downloads/ -->
+  <rect x="780" y="400" width="140" height="50" rx="8" fill="url(#nodeFill)" stroke="#FFC107" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2.6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="850" y="430" text-anchor="middle" fill="#e6edf3" font-family="Verdana" font-size="11" font-weight="bold">💾 downloads/</text>
+
+  <!-- ===================== LABELS ===================== -->
+  <text x="295" y="155" fill="#c9a8f0" font-family="Verdana" font-size="10">blocks ads</text>
+  <text x="295" y="245" fill="#c9a8f0" font-family="Verdana" font-size="10">hides ad DOM</text>
+  <text x="540" y="190" fill="#7ee2ff" font-family="Verdana" font-size="10">detects</text>
+  <text x="785" y="190" fill="#7ee2ff" font-family="Verdana" font-size="10">message</text>
+  <text x="1010" y="190" fill="#7ee2ff" font-family="Verdana" font-size="10">API call</text>
+  <text x="900" y="285" fill="#ff9d9d" font-family="Verdana" font-size="10">progress + file</text>
+  <text x="500" y="262" fill="#ff9d9d" font-family="Verdana" font-size="10">Save File to Disk</text>
+</svg>
