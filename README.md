@@ -1,33 +1,14 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,50:4A00E0,100:00C9FF&height=260&section=header&text=BLOCK-GRAB&fontSize=85&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Ad%20Blocker%20%2B%204K%20Video%20%2F%20MP3%20Downloader&descAlignY=58&descAlign=50&descSize=20" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:161B22,100:58A6FF&height=260&section=header&text=BLOCK-GRAB&fontSize=85&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Block%20the%20noise.%20Grab%20the%20good%20stuff.&descAlignY=58&descSize=20" width="100%"/>
 
-<br/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&pause=1600&color=00C9FF&center=true&vCenter=true&width=720&height=45&lines=Ad+Blocker+%2B+4K+Video+Downloader;MP3+Audio+Extraction+%E2%80%A2+Manifest+V3;React+%2B+Vite+Frontend;Node.js+%2B+Express+Backend" alt="Typing SVG" />
 
-<img src="https://readme-typing-svg.demolab.com/?lines=%F0%9F%9B%A1%EF%B8%8F+Block+ads+at+the+network+level;%F0%9F%8E%AC+Grab+4K+video+%26+MP3+audio;%E2%9A%99%EF%B8%8F+Manifest+V3+%2B+React+%2B+Vite;%F0%9F%9A%80+Node.js+%2B+Express+powered+backend;%E2%9C%A8+Block+the+noise.+Grab+the+good+stuff.&font=Fira+Code&center=true&width=620&height=45&color=00C9FF&vCenter=true&size=21&pause=1800&repeat=true" alt="Typing SVG" />
 
-<br/><br/>
+<img src="https://skillicons.dev/icons?i=chrome,react,vite,nodejs,express,js,html,css&theme=dark" />
 
-<img src="https://img.shields.io/badge/Manifest-V3-8E2DE2?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=1a1a2e"/>&nbsp;
-<img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-00C9FF?style=for-the-badge&logo=vite&logoColor=white&labelColor=1a1a2e"/>&nbsp;
-<img src="https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-00D26A?style=for-the-badge&logo=node.js&logoColor=white&labelColor=1a1a2e"/>&nbsp;
-<img src="https://img.shields.io/badge/License-MIT-FFC107?style=for-the-badge&labelColor=1a1a2e"/>
-
-<br/><br/>
-
-<img src="https://img.shields.io/github/stars/Ashish6298/Block-Grab?style=for-the-badge&logo=github&color=8E2DE2&labelColor=1a1a2e"/>&nbsp;
-<img src="https://img.shields.io/github/forks/Ashish6298/Block-Grab?style=for-the-badge&logo=github&color=00C9FF&labelColor=1a1a2e"/>&nbsp;
-<img src="https://img.shields.io/github/watchers/Ashish6298/Block-Grab?style=for-the-badge&logo=github&color=00D26A&labelColor=1a1a2e"/>
 
 </div>
-
-<br/>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=110&section=header&text=%F0%9F%9B%A1%EF%B8%8F%20Block%20Ads.%20%F0%9F%8E%AC%20Grab%20Media.&fontSize=30&fontColor=ffffff&animation=twinkling&desc=Two%20powerful%20tools.%20One%20lightweight%20extension.&descAlignY=78&descSize=14&fontAlignY=42" width="100%"/>
-</p>
-
-<br/>
 
 ## 📖 Overview
 
@@ -83,7 +64,7 @@
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="./assets/architecture.svg" width="100%" alt="Animated architecture flow diagram"/>
+  <img src="architecture.svg" width="100%" alt="Animated architecture flow diagram"/>
 </p>
 
 <p align="center"><i>✨ Live data-flow animation — glowing dots travel the connector lines to show requests, messages, and files moving through the system in real time.</i></p>
@@ -241,11 +222,6 @@ This compiles all React components and packages resources into the static `dist/
 </table>
 
 <br/>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=20&height=130&section=header&text=Downloading...&fontSize=28&fontColor=ffffff&animation=fadeIn&desc=4K%20Video%20%E2%80%A2%20MP3%20Audio%20%E2%80%A2%20Real-time%20Progress&descAlignY=75&descSize=13"/>
-</p>
-
 <br/>
 
 ## 🗺️ Roadmap
@@ -285,39 +261,25 @@ This project is licensed under the **MIT License** — feel free to use, modify,
 
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/116054951?v=4" width="120" style="border-radius:50%;" alt="Ashish Goswami"/>
-
-### Ashish Goswami
-
-*Information Science & Engineering undergraduate • App & Web Developer • AI Enthusiast*
-
-<br/>
+<h2>Ashish Goswami</h2>
 
 <a href="mailto:ashishgoswami1013@gmail.com">
-  <img src="https://img.shields.io/badge/Email-ashishgoswami1013%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-<a href="https://www.linkedin.com/in/ashish-goswami-58797a24a/">
-  <img src="https://img.shields.io/badge/LinkedIn-Ashish%20Goswami-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-<a href="https://github.com/Ashish6298">
-  <img src="https://img.shields.io/badge/GitHub-Ashish6298-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.icons8.com/fluency/48/gmail-new.png" width="36"/>
 </a>
 
-<br/>
+<a href="https://www.linkedin.com/in/ashish-goswami-58797a24a">
+  <img src="https://img.icons8.com/fluency/48/linkedin.png" width="36"/>
+</a>
 
-<a href="https://portfolio-omega-sand-67.vercel.app/">
-  <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-2C5364?style=for-the-badge&logo=vercel&logoColor=white"/>
+<a href="https://www.instagram.com/a.s.h.i.s.h__g.o.s.w.a.m.i">
+  <img src="https://img.icons8.com/fluency/48/instagram-new.png" width="36"/>
 </a>
-<a href="https://twitter.com/_ashish_goswami">
-  <img src="https://img.shields.io/badge/Twitter-%40_ashish_goswami-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
-</a>
-<a href="https://www.instagram.com/a.s.h.i.s.h__g.o.s.w.a.m.i/">
-  <img src="https://img.shields.io/badge/Instagram-a.s.h.i.s.h__g.o.s.w.a.m.i-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+
+<a href="https://portfolio-omega-sand-67.vercel.app">
+  <img src="https://img.icons8.com/fluency/48/domain.png" width="36"/>
 </a>
 
 </div>
-
-<br/>
 
 <div align="center">
 
